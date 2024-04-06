@@ -18,9 +18,9 @@ namespace calculator
         {
             double a, b;
             double result;
-           string sign;
+            string sign;
 
-           double Factorial_a(double a)
+            double Factorial_a(double a)
             {
                 if (a == 1) return 1;
 
@@ -42,8 +42,8 @@ namespace calculator
            "22) Логарифм числа b по основанию a   \n23) Натуральный Логарифм числа a равен \n24) Натуральный Логарифм числа b \n25) Десятичный Логарифм числа a \n26) Десятичный Логарифм числа b    ");
             Console.Write("Введите знак действия : ");
             sign = Convert.ToString(Console.ReadLine());
-            
-           
+
+
 
             if (sign == "1")
             {
@@ -83,7 +83,7 @@ namespace calculator
                     Console.ReadKey();
                 }
 
-               
+
 
 
             }
@@ -104,14 +104,14 @@ namespace calculator
                     Console.ReadKey();
                 }
             }
-            if(sign == "6")
+            if (sign == "6")
             {
                 result = Math.Pow(a, b);
                 Console.WriteLine("Степень: " + result);
                 Console.WriteLine("Для выхода нажмите любую клавишу...");
                 Console.ReadKey();
             }
-            if(sign == "7")
+            if (sign == "7")
 
             {
                 double c = Factorial_a(a);
@@ -133,24 +133,24 @@ namespace calculator
 
             {
                 Console.WriteLine($"Квадратный корень  числа a равен: {Math.Sqrt(a)}");
-               
-              Console.WriteLine("Для выхода нажмите любую клавишу...");
-              Console.ReadKey();
+
+                Console.WriteLine("Для выхода нажмите любую клавишу...");
+                Console.ReadKey();
             }
             if (sign == "10")
 
             {
-               
+
                 Console.WriteLine($"Квадратный корень числа b равен: {Math.Sqrt(b)}");
                 Console.WriteLine("Для выхода нажмите любую клавишу...");
                 Console.ReadKey();
             }
-           else if(sign == "19")
+            else if (sign == "19")
             {
-                if (a<0)
+                if (a < 0)
                 {
                     a = (-1) * a;
-                    Console.WriteLine("Модуль числа a равен: "+ a);
+                    Console.WriteLine("Модуль числа a равен: " + a);
                     Console.WriteLine("Для выхода нажмите любую клавишу...");
                     Console.ReadKey();
                 }
@@ -166,115 +166,121 @@ namespace calculator
                 if (b < 0)
                 {
                     b = (-1) * b;
-                    Console.WriteLine("Модуль числа b равен: " + b);
+                    Console.WriteLine("Модуль числа a равен: " + b);
                     Console.WriteLine("Для выхода нажмите любую клавишу...");
                     Console.ReadKey();
                 }
-            }
-            if(sign == "21")
-            {
-                Console.WriteLine($"Логарифм числа a по основанию b равен:{Math.Log(a, b)} ");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            if (sign == "22")
-            {
-                Console.WriteLine($"Логарифм числа b по основанию a равен:{Math.Log(b, a)} ");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            if (sign == "23")
-            {
-                Console.WriteLine($"Натуральный Логарифм числа a равен:{Math.Log(a)} ");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            if (sign == "24")
-            {
-                Console.WriteLine($"Натуральный Логарифм числа b равен:{Math.Log(b)} ");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            if(sign == "25")
-            {
-                Console.WriteLine($" Десятичный Логарифм числа a равен:{Math.Log(a, 10)} ");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            if (sign == "26")
-            {
-                Console.WriteLine($" Десятичный Логарифм числа b  равен:{Math.Log(b, 10)} ");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
+                else
+                {
+                    Console.WriteLine("Все впорядке");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+                if (sign == "21")
+                {
+                    Console.WriteLine($"Логарифм числа a по основанию b равен:{Math.Log(a, b)} ");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+                if (sign == "22")
+                {
+                    Console.WriteLine($"Логарифм числа b по основанию a равен:{Math.Log(b, a)} ");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+                if (sign == "23")
+                {
+                    Console.WriteLine($"Натуральный Логарифм числа a равен:{Math.Log(a)} ");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+                if (sign == "24")
+                {
+                    Console.WriteLine($"Натуральный Логарифм числа b равен:{Math.Log(b)} ");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+                if (sign == "25")
+                {
+                    Console.WriteLine($" Десятичный Логарифм числа a равен:{Math.Log(a, 10)} ");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+                if (sign == "26")
+                {
+                    Console.WriteLine($" Десятичный Логарифм числа b  равен:{Math.Log(b, 10)} ");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
 
-            else if (sign == "11")
-            {
-                Console.WriteLine($"Синус a равен: {Math.Sin(a)}");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            else if (sign == "12")
-            {
-                Console.WriteLine($"Синус b равен: {Math.Sin(b)}");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            else if (sign == "13")
-            {
-                Console.WriteLine($"Косинус a равен: {Math.Cos(a)}");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            else if (sign == "14")
-            {
-                Console.WriteLine($"Косинус b равен: {Math.Cos(b)}");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            else if (sign == "15")
-            {
-                Console.WriteLine($"Тангенс a равен: {Math.Tan(a)}");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            else if (sign == "16")
-
-
-            {
-                Console.WriteLine($"Тангенс b равен: {Math.Tan(b)}");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            else if (sign == "17")
-            {
-                Console.WriteLine($"Котангенс a равен: {1 / Math.Tan(a)}");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
-            else if (sign == "18")
-            {
-                Console.WriteLine($"Котангенс b равен: {1 / Math.Tan(b)}");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
-            }
+                else if (sign == "11")
+                {
+                    Console.WriteLine($"Синус a равен: {Math.Sin(a)}");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+                else if (sign == "12")
+                {
+                    Console.WriteLine($"Синус b равен: {Math.Sin(b)}");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+                else if (sign == "13")
+                {
+                    Console.WriteLine($"Косинус a равен: {Math.Cos(a)}");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+                else if (sign == "14")
+                {
+                    Console.WriteLine($"Косинус b равен: {Math.Cos(b)}");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+                else if (sign == "15")
+                {
+                    Console.WriteLine($"Тангенс a равен: {Math.Tan(a)}");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+                else if (sign == "16")
 
 
-            else
-            {
-                Console.WriteLine("Ошибка. Вы ввели неверный знак.");
-                Console.WriteLine("Для выхода нажмите любую клавишу...");
-                Console.ReadKey();
+                {
+                    Console.WriteLine($"Тангенс b равен: {Math.Tan(b)}");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+                else if (sign == "17")
+                {
+                    Console.WriteLine($"Котангенс a равен: {1 / Math.Tan(a)}");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+                else if (sign == "18")
+                {
+                    Console.WriteLine($"Котангенс b равен: {1 / Math.Tan(b)}");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+
+
+
+                else
+                {
+                    Console.WriteLine("Ошибка. Вы ввели неверный знак.");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+
+                
 
 
             }
-
 
         }
 
-        }
-        
-        
+
     }
-   
 
+}
